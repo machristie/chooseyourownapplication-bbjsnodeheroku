@@ -9,6 +9,7 @@ App.Views.Login = Backbone.View.extend({
   },
 
   render: function() {
+    console.log("Login.render isLoggedIn", this.model.isLoggedIn());
     this.$el.toggleClass("hidden", this.model.isLoggedIn());
     return this;
   },
